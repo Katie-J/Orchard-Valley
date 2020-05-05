@@ -36,12 +36,10 @@ public class PlayScreen implements Screen{
     private OrchardValley game;
 
 
-    //Camera variables
     OrthographicCamera cam;
     Viewport gameView;
     Vector3 tp;
 
-    //Tiled map variables
     TiledMap map;
     OrthogonalTiledMapRenderer renderer;
     MapLoader loader;
@@ -49,7 +47,6 @@ public class PlayScreen implements Screen{
     int mapHeight;
     MapObject object;
 
-    //Variables for player
     Entity player;
     TextureRegion currentPlayerFrame;
     Sprite currentPlayerSprite;
@@ -76,15 +73,12 @@ public class PlayScreen implements Screen{
     public Items gourdSeed;
     public int intType;
 
-    //Crop variables
     public Array<Crop> crops;
     public int numCrops;
     private TextureRegion[][] textureFrames;
     private TextureRegion mouseFrame;
     public Texture mouseCrop;
     public Array<Seeds> seeds;
-
-    //Variables for score
     public static Integer money;
     static Label timeLabel;
     static Label timeStringLabel;
